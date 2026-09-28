@@ -131,6 +131,23 @@ textarea:focus {
     cursor: pointer;
 }
 
+/* Passport Photo */
+.photo-preview {
+    width: 130px;
+    height: 170px;
+    object-fit: cover;
+    border: 2px solid #2563eb;
+    border-radius: 5px;
+    margin-top: 12px;
+    display: none;
+}
+
+.photo-note {
+    font-size: 13px;
+    color: #777;
+    margin-top: 6px;
+}
+
 /* Gender */
 .gender {
     display: flex;
@@ -151,6 +168,39 @@ textarea:focus {
 /* Textarea */
 textarea {
     resize: vertical;
+}
+
+/* Extra Media Sections */
+.media-section {
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #f8fafc;
+    border-radius: 8px;
+    border-left: 4px solid #2563eb;
+}
+
+.media-section h3 {
+    color: #1e40af;
+    margin-bottom: 12px;
+}
+
+.media-section a {
+    display: inline-block;
+    color: #2563eb;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.media-section a:hover {
+    text-decoration: underline;
+}
+
+audio,
+video {
+    width: 100%;
+    margin-top: 8px;
+    border-radius: 6px;
 }
 
 /* Buttons */
@@ -265,5 +315,10 @@ footer p {
 
     .reset-btn {
         width: 100%;
+    }
+
+    .photo-preview {
+        width: 120px;
+        height: 160px;
     }
 }
